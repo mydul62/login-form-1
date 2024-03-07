@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <style>
+    main{
+      background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(images/mountains-6839521_1920.jpg);
+      background-position:center center;
+    }
+    .disable{
+      background:#cccccc56!important;
+      color: white;
+    }
+  </style>
+  <body>
+    <main>
+      <div class="max-w-7xl mx-auto ">
+        <div class="flex justify-between items-center min-h-screen">
+          <div class="form mx-auto w-[400px] border-2 border-[#34495e] h-[500px] bg-[#aeaeae23] p-14 rounded-xl">
+            <div class="title">
+              <h1 class=" text-center py-2 text-3xl font-bold text-[#27ae60]">Sign in </h1>
+            </div>
+            <div id="toggle-line" class="w-6 mx-auto h-1 rounded-lg mb-8 bg-[#27ae60]">
+            </div>
+            <form class=" w-full space-y-4" action="">
+              <div class="input-field duration-1000">
+                <input type="text" placeholder="Name" id="input-name-field"  class=" input-feild block w-full outline-none border-none bg-[#aeaeae5a] py-3 px1 rounded-xl text-[#090909da] placeholder:text-black font-semibold pl-2" />
+              </div>
+              <div class="input-field">
+                <input type="email" placeholder="Email" id="input-email-field"  class=" input-feild block w-full outline-none border-none bg-[#aeaeae5a] py-3 px1 rounded-xl text-[#090909da] placeholder:text-black font-semibold pl-2" />
+              </div>
+              <div class="input-field">
+                <input type="password" placeholder="Password"  id="input-passwprd-field" class=" input-feild block w-full outline-none border-none bg-[#aeaeae5a] py-3 px1 rounded-xl text-[#090909da] placeholder:text-black font-semibold pl-2" />
+              </div>
+              <div>
+                <q class="text-white text-sm">Password suggestion <a  class=" text-[#27ae60]" href="#"> click here</a></q>
+              </div>
+              <div class="login flex justify-between items-center *:basis-[48%] py-5">
+                <button id="sign-up" class=" text-[] font-semibold bg-[#27ae60] py-3 rounded-lg duration-500">Sign Up</button>
+                <button id="sign-in" class="disable  text-[] font-semibold bg-[#27ae60] py-3 rounded-lg duration-500">Sign in</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
